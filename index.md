@@ -51,6 +51,37 @@ layout: default
 </section>
 
 <section>
+  <h2>From the field</h2>
+  <p>A few shots from members flying planes and helis at our field. See all of them on the <a href="{{ '/planes/' | relative_url }}">planes page</a> and <a href="{{ '/helis/' | relative_url }}">helis page</a>.</p>
+  <div class="gallery">
+    <figure class="gallery-item">
+      <a href="{{ '/planes/' | relative_url }}">
+        <img src="{{ '/images/planes/IMG_2104.jpg.jpeg' | relative_url }}" alt="The Marlin jet on the flight line" loading="lazy">
+      </a>
+      <figcaption>The Marlin jet on the flight line</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <a href="{{ '/helis/' | relative_url }}">
+        <img src="{{ '/images/heli/537557740_32071119395820199_6947080953551238701_n.jpg' | relative_url }}" alt="Heli flying low over the field at golden hour" loading="lazy">
+      </a>
+      <figcaption>Heli flying low over the field at golden hour</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <a href="{{ '/planes/' | relative_url }}">
+        <img src="{{ '/images/planes/IMG_2621.jpg.jpeg' | relative_url }}" alt="Giant scale four engine bomber under the shelter" loading="lazy">
+      </a>
+      <figcaption>Giant scale four engine bomber under the shelter</figcaption>
+    </figure>
+    <figure class="gallery-item">
+      <a href="{{ '/helis/' | relative_url }}">
+        <img src="{{ '/images/heli/556515837_32651570891108377_5989121892613037709_n.jpg' | relative_url }}" alt="Three helis lined up and ready to fly" loading="lazy">
+      </a>
+      <figcaption>Three helis lined up and ready to fly</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
   <h2>Our field</h2>
   <div class="fact-grid">
     <div class="fact-card">
