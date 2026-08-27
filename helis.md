@@ -7,11 +7,11 @@ description: Radio control helicopters and multi rotor aircraft flown by Northea
 
 <div class="page-header">
   <div class="wrap">
-    <h1>Helis</h1>
+    <h1>{% include icon-heli.html class="icon-badge" %}Helis</h1>
     <p>Photos of helicopters and multi rotor aircraft flown by our members at the field.</p>
   </div>
 </div>
 
 <section>
-  {% include gallery.html folder="images/heli" alt="Club member helicopter" %}
+  {% include gallery.html folder="images/heli" captions="heli_photos" alt="Club member helicopter" %}
 </section>

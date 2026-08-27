@@ -113,12 +113,71 @@ h1, h2, h3 {
   border-radius: 2px;
 }
 
+/* Icons */
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon-badge {
+  width: 40px;
+  height: 40px;
+  color: var(--orange);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.page-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-header h1 .icon-badge {
+  margin-bottom: 0;
+  color: var(--sky);
+}
+
+.hero-decor {
+  position: absolute;
+  color: #fff;
+  opacity: 0.16;
+}
+
+.hero-decor.plane-1 {
+  width: 130px;
+  height: 130px;
+  top: 10px;
+  right: 40px;
+  transform: rotate(20deg);
+}
+
+.hero-decor.heli-1 {
+  width: 100px;
+  height: 100px;
+  bottom: -10px;
+  left: 20px;
+  opacity: 0.13;
+}
+
+.hero-decor.plane-2 {
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  right: 220px;
+  transform: rotate(-10deg);
+  opacity: 0.12;
+}
+
 /* Hero */
 
 .hero {
   background: linear-gradient(135deg, var(--sky) 0%, var(--sky-dark) 100%);
   color: #fff;
   padding: 56px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -237,11 +296,15 @@ section {
 }
 
 .gallery-item {
-  display: block;
+  margin: 0;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
   background: #fff;
+}
+
+.gallery-item a {
+  display: block;
 }
 
 .gallery-item img {
@@ -249,6 +312,14 @@ section {
   height: 220px;
   object-fit: cover;
   display: block;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.gallery-item figcaption {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
 }
 
 .gallery-empty {
@@ -284,6 +355,50 @@ section {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--sky-dark);
+}
+
+/* Join steps */
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.step {
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.step-num {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-body h3 {
+  margin: 0 0 6px;
+}
+
+.step-body p {
+  margin: 0 0 6px;
+}
+
+@media (max-width: 500px) {
+  .step {
+    flex-direction: column;
+  }
 }
 
 /* Footer */
@@ -351,5 +466,19 @@ section {
 
   .hero h1 {
     font-size: 1.7rem;
+  }
+
+  .hero-decor.plane-2 {
+    display: none;
+  }
+
+  .hero-decor.plane-1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-decor.heli-1 {
+    width: 60px;
+    height: 60px;
   }
 }

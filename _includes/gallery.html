@@ -1,14 +1,22 @@
 {% comment %}
-Usage: {% include gallery.html folder="images/planes" alt="plane" %}
-Shows every image file found in the given folder, sorted by file name.
+Usage: {% include gallery.html folder="images/planes" captions="plane_photos" alt="plane" %}
+Shows every image file found in the given folder, sorted by file name, with a
+caption looked up from the matching file in _data (by exact file name).
 {% endcomment %}
 {% assign gallery_images = site.static_files | where_exp: "file", "file.path contains include.folder" %}
 {% assign gallery_images = gallery_images | sort: "name" %}
+{% assign gallery_captions = site.data[include.captions] %}
 <div class="gallery">
   {% for image in gallery_images %}
-    <a class="gallery-item" href="{{ image.path | relative_url }}" target="_blank" rel="noopener">
-      <img src="{{ image.path | relative_url }}" alt="{{ include.alt | default: 'club photo' }}" loading="lazy">
-    </a>
+    {% assign gallery_caption = gallery_captions[image.name] %}
+    <figure class="gallery-item">
+      <a href="{{ image.path | relative_url }}" target="_blank" rel="noopener">
+        <img src="{{ image.path | relative_url }}" alt="{{ gallery_caption | default: include.alt | default: 'club photo' }}" loading="lazy">
+      </a>
+      {% if gallery_caption %}
+        <figcaption>{{ gallery_caption }}</figcaption>
+      {% endif %}
+    </figure>
   {% endfor %}
 </div>
 {% if gallery_images.size == 0 %}

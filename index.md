@@ -3,6 +3,9 @@ layout: default
 ---
 
 <div class="hero">
+  {% include icon-plane.html class="hero-decor plane-1" %}
+  {% include icon-heli.html class="hero-decor heli-1" %}
+  {% include icon-plane.html class="hero-decor plane-2" %}
   <div class="wrap">
     <h1>Northeast Aero RC Club</h1>
     <p>Also known as the NEARC Flying Tigers. We are an AMA chartered radio control flying club in West Monroe, Louisiana, flying planes, helicopters, jets, and more.</p>
@@ -23,6 +26,7 @@ layout: default
   <h2>What we fly</h2>
   <div class="fact-grid">
     <div class="fact-card">
+      {% include icon-plane.html class="icon-badge" %}
       <h3>Fixed wing</h3>
       <p>See our <a href="{{ '/planes/' | relative_url }}">planes page</a> for photos from the field.</p>
       <ul>
@@ -34,6 +38,7 @@ layout: default
       </ul>
     </div>
     <div class="fact-card">
+      {% include icon-heli.html class="icon-badge" %}
       <h3>Rotor and more</h3>
       <p>See our <a href="{{ '/helis/' | relative_url }}">helis page</a> for photos from the field.</p>
       <ul>
@@ -81,7 +86,7 @@ layout: default
 
 <section>
   <h2>Get involved</h2>
-  <p>Want to join, visit, or ask a question? The best way to reach us is through our Facebook group. You can also contact our club treasurer, Bill Mahan, by phone or email. See the <a href="{{ '/leaders/' | relative_url }}">leaders page</a> for who runs the club.</p>
+  <p>Want to join, visit, or ask a question? See our <a href="{{ '/join/' | relative_url }}">how to join page</a> for the steps to get started. The best way to reach us in the meantime is through our Facebook group. You can also contact our club treasurer, Bill Mahan, by phone or email. See the <a href="{{ '/leaders/' | relative_url }}">leaders page</a> for who runs the club.</p>
   <div class="fact-grid">
     <div class="fact-card">
       <h3>Facebook</h3>
