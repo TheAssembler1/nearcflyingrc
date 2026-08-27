@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>{{ site.contact.name }}</p>
+      <p><a href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a></p>
+      <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    </div>
+    <div class="footer-col">
+      <h3>Find Us</h3>
+      <p>{{ site.field.address }}</p>
+      <p><a href="{{ site.field.map_link }}" target="_blank" rel="noopener">Get directions</a></p>
+    </div>
+    <div class="footer-col">
+      <h3>Online</h3>
+      <p><a href="{{ site.facebook_group }}" target="_blank" rel="noopener">Facebook group</a></p>
+      <p><a href="{{ site.ama_club_page }}" target="_blank" rel="noopener">AMA club page</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>AMA club number {{ site.club_number }}, {{ site.district }}. AMA membership required to fly.</p>
+    <p>&copy; {{ site.time | date: '%Y' }} Northeast Aero RC Club</p>
+  </div>
+</footer>

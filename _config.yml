@@ -1,0 +1,35 @@
+title: Northeast Aero RC Club
+tagline: Also known as the NEARC Flying Tigers
+description: >
+  Northeast Aero RC Club is an AMA chartered radio control flying club
+  in West Monroe, Louisiana. We fly planes, helicopters, jets, and more
+  at our field on Sheriff Fewell Road. Guests and new pilots are welcome.
+
+url: "https://nearcflyingtigers.com"
+baseurl: ""
+
+facebook_group: "https://www.facebook.com/groups/1447543095514131/"
+ama_club_page: "https://www.modelaircraft.org/club/northeast-aero-rc-club"
+
+contact:
+  name: Bill Mahan
+  phone: "318 512 2103"
+  email: billmahan2@icloud.com
+
+field:
+  address: "189 Sheriff Fewell Road, West Monroe, LA 71292"
+  map_link: "https://www.google.com/maps?q=32.48656,-92.2019"
+
+club_number: "2461"
+district: "District 8"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
