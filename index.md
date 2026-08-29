@@ -19,7 +19,7 @@ layout: default
 <section>
   <h2>About the club</h2>
   <p>Northeast Aero RC Club has been flying at our field on Sheriff Fewell Road for years. We welcome pilots of every skill level. Guest pilots and members of the general public are welcome to come watch or fly. We offer pilot instruction and training for anyone who is new to the hobby. AMA membership is required to fly at the field.</p>
-  <p>We hold regular club meetings, take part in community events, and support charitable causes. Our club follows a simple rule at the field: no drugs and no alcohol.</p>
+  <p>We hold regular club meetings, take part in community events, and support charitable causes. Our club follows the current AMA safety guidelines.</p>
 </section>
 
 <section>
@@ -33,7 +33,7 @@ layout: default
         <li>Electric and fuel or gas power</li>
         <li>3D, pattern, and pylon racing</li>
         <li>Giant scale and park flyers</li>
-        <li>Jets and ducted fan</li>
+        <li>EDF jets and ducted fans</li>
         <li>Soaring</li>
       </ul>
     </div>
@@ -44,7 +44,6 @@ layout: default
       <ul>
         <li>Helicopters</li>
         <li>Multi rotor</li>
-        <li>Rockets</li>
       </ul>
     </div>
   </div>
@@ -68,9 +67,9 @@ layout: default
     </figure>
     <figure class="gallery-item">
       <a href="{{ '/planes/' | relative_url }}">
-        <img src="{{ '/images/planes/IMG_2621.jpg.jpeg' | relative_url }}" alt="Giant scale four engine bomber under the shelter" loading="lazy">
+        <img src="{{ '/images/planes/IMG_2621.jpg.jpeg' | relative_url }}" alt="Scale four engine bomber under the shelter" loading="lazy">
       </a>
-      <figcaption>Giant scale four engine bomber under the shelter</figcaption>
+      <figcaption>Scale four engine bomber under the shelter</figcaption>
     </figure>
     <figure class="gallery-item">
       <a href="{{ '/helis/' | relative_url }}">
