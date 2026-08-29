@@ -248,6 +248,12 @@ main > * {
   max-width: 1080px;
 }
 
+main > .hero,
+main > .page-header {
+  max-width: none;
+  margin: 0;
+}
+
 section {
   margin: 0 auto 46px;
   max-width: 1080px;
