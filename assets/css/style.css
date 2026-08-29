@@ -176,6 +176,7 @@ h1, h2, h3 {
   background: linear-gradient(135deg, var(--sky) 0%, var(--sky-dark) 100%);
   color: #fff;
   padding: 56px 0;
+  margin-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -264,6 +265,7 @@ section {
   padding: 40px 20px;
   background: #fff;
   border-bottom: 1px solid var(--line);
+  margin-bottom: 40px;
   text-align: center;
 }
 
