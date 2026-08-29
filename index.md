@@ -81,6 +81,31 @@ layout: default
 </section>
 
 <section>
+  <h2>Videos</h2>
+  <p>A few videos from club events and flight nights. See more on our Facebook group.</p>
+  <div class="video-grid">
+    <figure class="video-item">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/axea8MTjKpA?si=cyvLy-jwZIc3-WAV" title="First ever Heli Flight Night" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <figcaption>Our first ever heli flight night, members flying helicopters at the field after dark.</figcaption>
+    </figure>
+    <figure class="video-item">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/wWkHIrZB4Vg?si=wQ-7Y8s9xYlNShz0" title="Saturday at Rotors Over The Ouachita 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <figcaption>Saturday flying at our Rotors Over the Ouachita event in 2025.</figcaption>
+    </figure>
+    <figure class="video-item">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/uYaDcsim7kY?si=VVIBq1DxAE2FbIcJ" title="The Floyd McCarty Memorial Fun Fly 2025, Saturday" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <figcaption>Saturday at the Floyd McCarty Memorial Fun Fly in 2025.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
   <h2>Our field</h2>
   <div class="fact-grid">
     <div class="fact-card">
