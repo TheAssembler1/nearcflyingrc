@@ -2,6 +2,7 @@
 layout: event
 title: "Rotors Over the Ouachita Heli Fly 2026"
 date: 2026-10-02
+end_date: 2026-10-04
 dates: "October 2nd through October 4th, 2026"
 summary: "A heli fly in at our field, October 2nd through October 4th, 2026."
 image: /images/events/rotors-over-the-ouachita-2026.jpg
