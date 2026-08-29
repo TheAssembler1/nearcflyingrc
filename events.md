@@ -6,29 +6,28 @@ description: Upcoming fly ins and events hosted by Northeast Aero RC Club.
 ---
 
 <div class="page-header">
-  <div class="wrap">
-    <h1>Events</h1>
-    <p>Fly ins and other events hosted at our field. Check back for updates or watch our Facebook group for the latest.</p>
+  <div class="wrap page-header-flex">
+    <div id="events-calendar" class="calendar calendar-compact"></div>
+    <div class="page-header-text">
+      <h1>Events</h1>
+      <p>Fly ins and other events hosted at our field. Check back for updates or watch our Facebook group for the latest.</p>
+    </div>
   </div>
 </div>
 
-<section>
-  <h2>Calendar</h2>
-  <div id="events-calendar" class="calendar"></div>
-  <script id="events-data" type="application/json">
-    [
-      {% assign events = site.events | sort: "date" %}
-      {% for event in events %}
-      {
-        "title": {{ event.title | jsonify }},
-        "url": {{ event.url | relative_url | jsonify }},
-        "start": {{ event.date | date: "%Y-%m-%d" | jsonify }},
-        "end": {{ event.end_date | default: event.date | date: "%Y-%m-%d" | jsonify }}
-      }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
-  </script>
-</section>
+<script id="events-data" type="application/json">
+  [
+    {% assign events = site.events | sort: "date" %}
+    {% for event in events %}
+    {
+      "title": {{ event.title | jsonify }},
+      "url": {{ event.url | relative_url | jsonify }},
+      "start": {{ event.date | date: "%Y-%m-%d" | jsonify }},
+      "end": {{ event.end_date | default: event.date | date: "%Y-%m-%d" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+</script>
 
 <section>
   <h2>Upcoming</h2>

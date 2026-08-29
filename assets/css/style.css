@@ -286,6 +286,28 @@ section {
   margin-right: auto;
 }
 
+.page-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.page-header-flex .page-header-text {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .page-header-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
+
 /* Fact cards */
 
 .fact-grid {
@@ -449,6 +471,31 @@ section {
   border-radius: var(--radius);
   padding: 20px;
   max-width: 380px;
+}
+
+.calendar-compact {
+  flex: none;
+  width: 280px;
+  max-width: 280px;
+  padding: 14px;
+}
+
+.calendar-compact .calendar-title {
+  font-size: 0.95rem;
+}
+
+.calendar-compact .calendar-nav {
+  width: 26px;
+  height: 26px;
+  font-size: 1rem;
+}
+
+.calendar-compact .calendar-day {
+  font-size: 0.72rem;
+}
+
+.calendar-compact .calendar-dow {
+  font-size: 0.62rem;
 }
 
 .calendar-header {
