@@ -180,6 +180,10 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
+.hero .wrap {
+  text-align: center;
+}
+
 .hero h1 {
   color: #fff;
   font-size: 2.2rem;
@@ -189,12 +193,15 @@ h1, h2, h3 {
 .hero p {
   font-size: 1.15rem;
   max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
   color: #eaf3fb;
 }
 
 .button-row {
   margin-top: 22px;
   display: flex;
+  justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
 }
@@ -251,15 +258,22 @@ section {
   padding: 40px 20px;
   background: #fff;
   border-bottom: 1px solid var(--line);
-  text-align: left;
+  text-align: center;
 }
 
 .page-header h1 {
   margin: 0 0 8px;
+  justify-content: center;
 }
 
 .page-header .wrap {
   max-width: 1080px;
+}
+
+.page-header p {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Fact cards */
