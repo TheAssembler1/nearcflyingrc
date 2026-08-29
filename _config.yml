@@ -25,6 +25,13 @@ district: "District 8"
 
 markdown: kramdown
 
+future: true
+
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
