@@ -102,6 +102,12 @@ layout: default
       </div>
       <figcaption>Saturday at the Floyd McCarty Memorial Fun Fly in 2025.</figcaption>
     </figure>
+    <figure class="video-item">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/QaYTAd3sXME" title="NEARC Fall Big Bird Fun Fly Heli demo 2011" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <figcaption>Heli demo at the NEARC Fall Big Bird Fun Fly in 2011.</figcaption>
+    </figure>
   </div>
 </section>
 
