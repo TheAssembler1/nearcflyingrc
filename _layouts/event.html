@@ -11,7 +11,14 @@ layout: default
 
 <section>
   <div class="event-detail">
-    <img class="event-detail-img" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    <div class="event-photo-frame{% if page.decor %} decor-{{ page.decor }}{% endif %}">
+      {% if page.decor == "helis" %}
+        {% include icon-heli.html class="photo-decor h1" %}
+        {% include icon-heli.html class="photo-decor h2" %}
+        {% include icon-heli.html class="photo-decor h3" %}
+      {% endif %}
+      <img class="event-detail-img" src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: {{ page.image_width | default: 505 }}px;">
+    </div>
     <div class="event-detail-body">
       {{ content }}
     </div>
